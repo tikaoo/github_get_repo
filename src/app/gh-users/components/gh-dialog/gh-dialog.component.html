@@ -1,0 +1,25 @@
+<h2 mat-dialog-title>Dados de {{ username }}</h2>
+<div mat-dialog-content>
+  <mat-progress-spinner
+    color="accent"
+    mode="indeterminate"
+    *ngIf="user == null; else content"
+  >
+  </mat-progress-spinner>
+
+  <ng-template #content>
+    <a [href]="user?.html_url" target="_blank">
+      {{ user?.name }}
+    </a>
+
+    <!--<a [href]="user?.avatar_url" target="_blank"></a>-->
+
+    <div>
+      <mat-card *ngFor="let c of lista; let i = index">
+        <a [href]="c.html_url"> {{ c?.name }}</a>
+        <a>Linguagem utilizada:{{ c?.language }} </a>
+        <a> Repositório: {{ i+1 }}</a>
+      </mat-card>
+    </div>
+  </ng-template>
+</div>

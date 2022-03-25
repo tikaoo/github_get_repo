@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="search">
+        <mat-form-field>
+            <mat-label> Pesquise aqui</mat-label>
+                <input 
+                appearence="outline"
+                type="text"
+                matInput
+                [formControl]="usernameToFind"
+                (keyup.enter)="showDialog()">
+        <mat-error> Informe um username para ser pesquisado!</mat-error>            
+        </mat-form-field>
+        <button mat-stroked-button color="warn" 
+        [disabled]="usernameToFind.invalid"
+        (click)="showDialog()"
+        
+        > <mat-icon>search</mat-icon></button>
+
+    </div>
+</div>
