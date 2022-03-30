@@ -1,4 +1,14 @@
 # App
+API para busca de usuário do github, essa API traz as principais informações do usuários e repositórios.
+Home page:
+![home_api](https://user-images.githubusercontent.com/94652044/160947887-f9ba2183-abfc-4e5e-b8b9-aea8a3a0236c.jpg)
+
+Dados do usuário:
+![dialog](https://user-images.githubusercontent.com/94652044/160947881-13f4a480-5937-4a55-acb3-5b0f2cfb3bc3.jpg)
+Dados dos repositórios:
+![dialog_repo](https://user-images.githubusercontent.com/94652044/160947885-d82e4762-1c4d-432f-bbdf-e6e4ce4f05cf.jpg)
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
 
