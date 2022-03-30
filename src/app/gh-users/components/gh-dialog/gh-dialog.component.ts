@@ -24,9 +24,7 @@ export class GhDialogComponent implements OnInit {
     this.ghService.findUser(this.username).subscribe((gUser) => {
       this.user = gUser
     })
-    /*this.ghService.findUser(this.avatar).subscribe((picture) => {
-      this.foto = picture
-    })*/
+    
 
     this.ghService.fRepo(this.username).subscribe((repo) => {
       this.lista = repo

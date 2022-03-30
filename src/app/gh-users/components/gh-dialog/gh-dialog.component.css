@@ -1,0 +1,45 @@
+img{
+    height: 200px;
+    width: 200px;
+    padding: 15px;
+    
+}
+.dialog{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:350px;
+    background-color: black;
+    color:white;
+    padding: 20px;
+    justify-items: center;
+    font-size: 18px;
+    
+}
+ng-template{
+    background-color: black;
+    color:white;
+    margin-left: 10px;
+}
+mat-card{
+    background-color: black;
+    color:white;
+    padding: 0;
+}
+a{
+    color:red;
+    
+}
+h2{
+    text-align: center;
+    color: yellow;
+    font-size: 18px;
+    
+}
+.dados{
+    text-align: center;
+}
+p{
+    text-align: center;
+    margin: 0;
+}

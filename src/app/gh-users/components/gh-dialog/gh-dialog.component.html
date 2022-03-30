@@ -1,3 +1,5 @@
+
+<div class="dialog">
 <h2 mat-dialog-title>Dados de {{ username }}</h2>
 <div mat-dialog-content>
   <mat-progress-spinner
@@ -7,19 +9,47 @@
   >
   </mat-progress-spinner>
 
-  <ng-template #content>
-    <a [href]="user?.html_url" target="_blank">
-      {{ user?.name }}
-    </a>
-
-    <!--<a [href]="user?.avatar_url" target="_blank"></a>-->
-
-    <div>
-      <mat-card *ngFor="let c of lista; let i = index">
-        <a [href]="c.html_url"> {{ c?.name }}</a>
-        <a>Linguagem utilizada:{{ c?.language }} </a>
-        <a> Repositório: {{ i+1 }}</a>
-      </mat-card>
+  <ng-template  #content>
+    <p><a  [href]="user?.html_url" target="_blank">{{ user?.name }}</a></p>
+    
+      <br />
+    <div class="dados">
+      <img [src]="user?.avatar_url" target="_blank" /><br />
+      <br />
+      <span> Apelido: {{ user?.login }}</span
+      ><br />
+      <br />
+      <span> Biografia: {{ user?.bio }}</span
+      ><br />
+      <br />
+      <span> <mat-icon>location_on</mat-icon>{{ user?.location }}</span
+      ><br />
+      <br /><span> Seguidores: {{ user?.followers }}</span
+      ><br />
+      <br />
+      <span> Seguindo: {{ user?.following }}</span
+      ><br />
     </div>
+  
+      <mat-card *ngFor="let c of lista; let i = index">
+        <br />
+        <a [href]="c.html_url"> {{ c?.name }}</a
+        ><br />
+        <br />
+        <span> Descrição: {{ c?.description }}</span
+        ><br />
+        <br />
+        <span>Linguagem utilizada: {{ c?.language }} </span><br />
+        <br />
+        <span> Repositório: {{ i + 1 }}</span
+        ><br />
+        <br />
+        <span> Tamanho: {{ c?.size }}</span
+        ><br />
+        <br />
+        <span> <mat-icon>stars</mat-icon> {{ c?.stargazers_count }}</span
+        ><br />
+      </mat-card>
+    
   </ng-template>
 </div>

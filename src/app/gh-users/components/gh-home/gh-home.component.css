@@ -3,10 +3,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #673ab7;
+    background: #a4b73a;
+    color: black;
 }
 .container .search{
     display: flex;
     flex-direction: column;
     width: 400px;
+}
+h1{
+    text-align:center;
+    background: #a4b73a;
+    margin:0;
 }
